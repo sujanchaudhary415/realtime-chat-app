@@ -1,62 +1,67 @@
-.rs{
+
+.rs {
     color: white;
     background: #001030;
     position: relative;
     height: 75vh;
     overflow-y: scroll;
-
 }
 
-.rs-profile{
+.rs-profile {
     padding-top: 60px;
     text-align: center;
     max-width: 70%;
     margin: auto;
 }
-.rs-profile img{
+
+.rs-profile img {
     width: 110px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-
 }
-.rs-profile h3{
+
+.rs-profile h3 {
     font-size: 18px;
     font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:5px 0px;
+    margin: 5px 0;
     gap: 5px;
 }
-.rs-profile p{
+
+.rs-profile p {
     font-size: 10px;
-    opacity:80%;
+    opacity: 80%;
     font-weight: 300;
 }
-.rs hr{
+
+.rs hr {
     border-color: #ffffff50;
-    margin: 15px 0px;
+    margin: 15px 0;
 }
 
-.rs-media{
-    padding: 0px 20px;
+.rs-media {
+    padding: 0 20px;
     font-size: 13px;
-
 }
-.rs-media div{
+
+.rs-media div {
     max-height: 180px;
     overflow-y: scroll;
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
     margin-top: 8px;
 }
-.rs-media div img{
+
+.rs-media div img {
     width: 60px;
     border-radius: 4px;
     cursor: pointer;
 }
-.rs button{
+
+.rs button {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -69,5 +74,42 @@
     padding: 10px 65px;
     border-radius: 20px;
     cursor: pointer;
+}
 
+
+@media (max-width: 768px) {
+    .rs-profile {
+        max-width: 90%; 
+    }
+
+    .rs-profile img {
+        width: 80px; 
+    }
+
+    .rs-profile h3 {
+        font-size: 16px; 
+    }
+
+    .rs-profile p {
+        font-size: 9px; 
+    }
+
+    .rs-media div {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .rs-media div img {
+        width: 50px; 
+    }
+
+    .rs button {
+        padding: 8px 50px; 
+        font-size: 11px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .rs {
+        display: none; 
+    }
 }
